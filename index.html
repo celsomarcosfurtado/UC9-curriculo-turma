@@ -6,6 +6,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+        <!-- Estilos CSS INTERNAL -->
+    <style>
+        .titulo-do-card {
+            font-size: 24px;
+            font-family: 'Poppins';
+            font-weight: 400;
+            color: #75620D;
+            background-color: #DCDC1A;
+            padding: 10px 16px;
+            border-radius: 8px;
+            margin: 0 0 12px 0;
+        }
+        .card {
+            background-color: #BAFDEB;
+            padding: 12px;
+            border-radius: 16px;
+            margin: 16px 0;
+        }
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+            margin-left: 16px;
+        }
+        .linha-tracejada {
+            border: 1px dashed #A7A7A7;
+            margin: 16px;
+        }
+        .rodape{
+            background-color: F51C1C;
+            padding: 26px 0;
+            font-family: 'Poppins';
+            font-size: 16px;
+            color: #ffffff;
+            font-weight: 400;
+            text-align: center;
+        }
+    </style>
+
 </head>
 
 <body style="margin: 0; font-family: 'Poppins';">
@@ -21,36 +60,44 @@
     ">Currículo Profissional</h1>
     </header>
 
-    <main style="width: 1140px; 
-        background-color: aqua; 
+    <main style="width: 1140px;
         margin: auto;
     ">
         <!-- Foto e nome do candidato -->
         <section style="width: 500px; 
-            background-color: burlywood; 
             margin: auto;
             text-align: center;
         ">
             <img src="./assets/perfil.jpg" style="
                 width: 192px;
                 border-radius: 96px;
-            "/>
-            <h2 style="font-size: 36px; font-weight: 700;">Celso Furtado</h2>
-            <h3 style="font-size: 24px; font-weight: 400; color: #676767;">Desenvolvedor Full Stack em formação</h3>
+                margin-top: 53px;
+            " />
+            <h2 style="font-size: 36px; 
+                font-weight: 700;
+                margin: 0 0 14px 0;
+            ">
+                Celso Furtado
+            </h2>
+            <h3 style="font-size: 24px; 
+                font-weight: 400; 
+                color: #676767;
+                margin: 0 0 12px 0;
+            ">Desenvolvedor Full Stack em formação</h3>
         </section>
-        <hr />
+        <hr style="margin: 0; border: 2px solid #D1D1D1;" />
 
         <!-- Dados pessoais -->
-        <section>
-            <h3>Dados Pessoais</h3>
+        <section class="card" >
+            <h3 class="titulo-do-card" style="background-color: #7CF2FF; color: #1F0BFF;">Dados Pessoais</h3>
             <p><b>Telefone:</b> (11)92222-1111</p>
             <p><strong>E-mail:</strong> pedro.silva@email.com</p>
             <p><strong>Endereço:</strong> Rua Primavera, 234 - Jd. Europa - Osasco - SP</p>
         </section>
 
         <!-- Resumo profissional -->
-        <section>
-            <h3>Resumo</h3>
+        <section class="card">
+            <h3 class="titulo-do-card">Resumo</h3>
             <p>
                 Profissional de Análise e Desenvolvimento de Sistemas
                 apaixonado por tecnologia e resolução de problemas.
@@ -61,13 +108,13 @@
         </section>
 
         <!-- Formação acadêmica -->
-        <section>
-            <h3>Formação Acadêmica</h3>
+        <section class="card">
+            <h3 class="titulo-do-card">Formação Acadêmica</h3>
             <p><b>Instituição:</b> SENAC Osasco</p>
             <p><b>Curso:</b>Técnico em Desenvolvimento de Sistemas</p>
             <p><b>Período:</b> Jul/2025 - Dez/2026</p>
             <p><b>Carga Horária:</b> 1200H</p>
-            <hr />
+            <hr class="linha-tracejada" />
             <p><b>Instituição:</b> SENAC Osasco</p>
             <p><b>Curso:</b>Técnico em Desenvolvimento de Sistemas</p>
             <p><b>Período:</b> Jul/2025 - Dez/2026</p>
@@ -75,8 +122,8 @@
         </section>
 
         <!-- Experiência Profissional -->
-        <section>
-            <h3>Experiência Profissional</h3>
+        <section class="card">
+            <h3 class="titulo-do-card">Experiência Profissional</h3>
             <p><b>Empresa:</b> Sistemas & Software</p>
             <p><b>Cargo:</b> Desenvolvedor Júnior</p>
             <p><b>Período:</b> Out/2024 - Atual</p>
@@ -86,7 +133,7 @@
                 <li>Colaboração em projetos back-end com Java e C#</li>
                 <li>Modelagem e implementação de banco de dados com SQL-Server</li>
             </ul>
-            <hr />
+            <hr class="linha-tracejada" />
             <p><b>Empresa:</b> Comp Informática S/A</p>
             <p><b>Cargo:</b> Estágio em desenvolvimento de sistemas</p>
             <p><b>Período:</b> Ago/2021 - Set/2024</p>
@@ -101,8 +148,8 @@
         </section>
 
         <!-- Links Profissionais -->
-        <section>
-            <h3>Resumo</h3>
+        <section class="card">
+            <h3 class="titulo-do-card">Links Profissionais</h3>
             <ul>
                 <li>Veja meu portfólio no GitHub</li>
                 <li>Acompanhe o meu perfil no LinkedIn</li>
@@ -111,7 +158,7 @@
 
     </main>
 
-    <footer>
+    <footer class="rodape">
         <p>Desenvolvido por Celso Furtado - SENAC - 2026</p>
     </footer>
 
